@@ -112,10 +112,13 @@ def get_combined(img):
     ksize = 3  # Choose a larger odd number to smooth gradient measurements
 
     # Apply each of the thresholding functions
-    gradx = abs_sobel_thresh(img, orient='x', sobel_kernel=ksize, thresh=(0, 255))
-    grady = abs_sobel_thresh(img, orient='y', sobel_kernel=ksize, thresh=(0, 255))
-    mag_binary = mag_thresh(img, sobel_kernel=ksize, mag_thresh=(125, 130))
-    dir_binary = dir_threshold(img, sobel_kernel=ksize, thresh=(0, np.pi / 2))
+    gradx = abs_sobel_thresh(img, orient='x', sobel_kernel=ksize, thresh=(100, 255))
+    grady = abs_sobel_thresh(img, orient='y', sobel_kernel=ksize, thresh=(100, 255))
+    mag_binary = mag_thresh(img, sobel_kernel=ksize, mag_thresh=(50, 255))
+    dir_binary = dir_threshold(img, sobel_kernel=ksize, thresh=(0.7, 1.3))
+    dir_binary2 = np.uint8(255 * dir_binary / np.max(dir_binary))
+    # plt.imshow(dir_binary2)
+    # plt.show()
     combined = np.zeros_like(dir_binary)
     combined[((gradx == 1) & (grady == 1)) | ((mag_binary == 1) & (dir_binary == 1))] = 1
     combined = np.uint8(255 * combined / np.max(combined))
@@ -123,11 +126,11 @@ def get_combined(img):
 
 
 if __name__ == "__main__":
-    straight = cv2.imread("..\\test_images\\straight_lines1.jpg")
+    straight = cv2.imread("..\\signs_vehicles_xygrad.png")
     # plt.imshow(straight)
     # plt.show()
-    com = get_combined(straight)
-    plt.imshow(com)
+    comb = get_combined(straight)
+    plt.imshow(comb)
     plt.show()
 
 
