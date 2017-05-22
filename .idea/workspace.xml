@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04059fd6-cf01-4e03-8e3f-944c20a1e50e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Udacity-Nano-CarND-Term1-Project4.iml" afterPath="$PROJECT_DIR$/.idea/Udacity-Nano-CarND-Term1-Project4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/gradient_color_lane_finder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/lane_curvature_finder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/lane_drawer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/lane_tracker_convolution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/lane_tracker_sliding_window.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pipline_lane_finder.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/lane_finder.py" afterPath="$PROJECT_DIR$/examples/lane_finder.py" />
     </list>
@@ -25,17 +29,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lane_finder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lane_finder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/lane_finder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+            <state relative-caret-position="408">
+              <caret line="136" column="16" lean-forward="true" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#222#1930#0" expanded="false" />
                 <element signature="e#1994#2693#0" expanded="false" />
                 <element signature="e#2837#3434#0" expanded="false" />
                 <element signature="e#3512#4044#0" expanded="false" />
+                <element signature="e#4121#4955#0" expanded="false" />
+                <element signature="e#4984#5780#0" expanded="false" />
+                <element signature="e#5824#6037#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipline_lane_finder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/pipline_lane_finder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lane_tracker_sliding_window.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/lane_tracker_sliding_window.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1058">
+              <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lane_tracker_convolution.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/lane_tracker_convolution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradient_color_lane_finder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/gradient_color_lane_finder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lane_curvature_finder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/lane_curvature_finder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lane_drawer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/lane_drawer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,6 +147,13 @@
       <list>
         <option value="$PROJECT_DIR$/examples/notebook_converter.py" />
         <option value="$PROJECT_DIR$/examples/lane_finder.py" />
+        <option value="$PROJECT_DIR$/examples/gradient_color_lane_finder.py" />
+        <option value="$PROJECT_DIR$/examples/pipline_lane_finder.py" />
+        <option value="$PROJECT_DIR$/examples/lane_tracker.py" />
+        <option value="$PROJECT_DIR$/examples/lane_tracker_convolution.py" />
+        <option value="$PROJECT_DIR$/examples/lane_tracker_sliding_window.py" />
+        <option value="$PROJECT_DIR$/examples/lane_curvature_finder.py" />
+        <option value="$PROJECT_DIR$/examples/lane_drawer.py" />
       </list>
     </option>
   </component>
@@ -345,6 +431,14 @@
       <option name="presentableId" value="Default" />
       <updated>1495380656451</updated>
     </task>
+    <task id="LOCAL-00001" summary="tune parameters for lane_finder.py">
+      <created>1495427750761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495427750761</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -382,6 +476,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tune parameters for lane_finder.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="tune parameters for lane_finder.py" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="4" />
@@ -407,6 +505,9 @@
             <element signature="e#1994#2693#0" expanded="false" />
             <element signature="e#2837#3434#0" expanded="false" />
             <element signature="e#3512#4044#0" expanded="false" />
+            <element signature="e#4121#4955#0" expanded="false" />
+            <element signature="e#4984#5780#0" expanded="false" />
+            <element signature="e#5824#6037#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -526,14 +627,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/lane_finder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+        <state relative-caret-position="408">
+          <caret line="136" column="16" lean-forward="true" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#222#1930#0" expanded="false" />
             <element signature="e#1994#2693#0" expanded="false" />
             <element signature="e#2837#3434#0" expanded="false" />
             <element signature="e#3512#4044#0" expanded="false" />
+            <element signature="e#4121#4955#0" expanded="false" />
+            <element signature="e#4984#5780#0" expanded="false" />
+            <element signature="e#5824#6037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/lane_tracker_convolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/lane_tracker_sliding_window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/lane_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pipline_lane_finder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/gradient_color_lane_finder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/lane_curvature_finder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/lane_drawer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
