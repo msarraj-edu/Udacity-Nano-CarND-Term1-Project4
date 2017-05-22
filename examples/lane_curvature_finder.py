@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
+
 # Generate some fake data to represent lane-line pixels
 ploty = np.linspace(0, 719, num=720)# to cover same y-range as image
 quadratic_coeff = 3e-4 # arbitrary quadratic coefficient

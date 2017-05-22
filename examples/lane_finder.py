@@ -135,9 +135,11 @@ if __name__ == "__main__":
     straight = cv2.imread("..\\signs_vehicles_xygrad.png")
     # plt.imshow(straight)
     # plt.show()
-    comb = get_combined(straight)
-    plt.imshow(comb)
-    plt.show()
+    # comb = get_combined(straight)
+    # plt.imshow(comb)
+    # plt.show()
+    warped,M = corners_unwarp(straight, )
+
 
 
 
