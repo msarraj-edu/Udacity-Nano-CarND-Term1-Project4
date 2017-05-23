@@ -227,11 +227,20 @@ for i in range(len(images)):
     img = cv2.imread(images[i])
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-    top_left = [570,470]
-    top_right = [720,470]
-    bottom_right = [1130,720]
-    bottom_left = [200,720]
+    # top_left = [562,470]
+    # top_right = [721,470]
+    top_left = [560, 470]
+    top_right = [720, 470]
+    bottom_right = [950,620]
+    bottom_left = [350,620]
     pts = np.array([bottom_left,bottom_right,top_right,top_left])
+
+    # plt.imshow(img)
+    # plt.plot(top_left[0],top_left[1],'.')
+    # plt.plot(top_right[0], top_right[1], '.')
+    # plt.plot(bottom_right[0], bottom_right[1], '.')
+    # plt.plot(bottom_left[0], bottom_left[1], '.')
+    # plt.show()
 
     top_left_dst = [320,0]
     top_right_dst = [980,0]
@@ -254,6 +263,10 @@ for i in range(len(images)):
     image_size = (img.shape[1], img.shape[0])
     warped = cv2.warpPerspective(img, M, dsize = image_size, flags = cv2.INTER_LINEAR)
     ax1.imshow(img)
+    ax1.plot(top_left[0], top_left[1], '.')
+    ax1.plot(top_right[0], top_right[1], '.')
+    ax1.plot(bottom_right[0], bottom_right[1], '.')
+    ax1.plot(bottom_left[0], bottom_left[1], '.')
     ax2.imshow(warped)
     plt.show()
 
