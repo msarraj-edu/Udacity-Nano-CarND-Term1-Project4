@@ -107,7 +107,7 @@ def abs_sobel_thresh(img, orient='x', sobel_kernel=3, thresh=(0,255)):
     # Return the result
     return binary_output
 
-def get_combined(img):
+def get_combined_gradient(img):
     # Choose a Sobel kernel size
     ksize = 3  # Choose a larger odd number to smooth gradient measurements
 
