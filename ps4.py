@@ -375,10 +375,9 @@ for i in range(len(images)):
     quadratic_coeff = 3e-4  # arbitrary quadratic coefficient
     # For each y position generate random x position within +/-50 pix
     # of the line base position in each case (x=200 for left, and x=900 for right)
-    leftx = np.array([200 + (y ** 2) * quadratic_coeff + np.random.randint(-50, high=51)
-                      for y in ploty])
-    rightx = np.array([900 + (y ** 2) * quadratic_coeff + np.random.randint(-50, high=51)
-                       for y in ploty])
+    leftx = l_points
+    rightx = r_points
+
 
     leftx = leftx[::-1]  # Reverse to match top-to-bottom in y
     rightx = rightx[::-1]  # Reverse to match top-to-bottom in y
@@ -427,8 +426,31 @@ for i in range(len(images)):
     plt.show()
 
 
+    def draw_polygon(image, left_coeffs, right_coeffs):
+        left_points = []
+        right_points = []
 
+        left_eq = np.poly1d(left_coeffs)
+        right_eq = np.poly1d(right_coeffs)
 
+        for y in range(720):
+            x = int(left_eq(y))
+            if x < 0:
+                pass
+            else:
+                left_points.append([x, y])
+
+        for y in range(720):
+            x = int(right_eq(y))
+            if x < 0:
+                pass
+            else:
+                right_points.append([x, y])
+
+        polygon_points = left_points + right_points[::-1]
+
+        final_image = np.zeros_like(image)
+        final_image = cv2.fillPoly(final_image, [np.array(polygon_points)], color=(102, 255, 102))
 
 
 
